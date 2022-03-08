@@ -1,0 +1,19 @@
+body{
+    background-color: khaki;
+}
+table{
+    border: 1px solid black;
+}
+tbody {
+    padding: 10px;
+    background-color: #f5f5f5;
+    font-size: 18px;
+}
+tr:hover{
+    background-color: #948373;
+}
+thead {
+    background-color: #a97b4c;
+    padding: 70px;
+    margin: 70px;
+}

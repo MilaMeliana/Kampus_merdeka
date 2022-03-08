@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JS-7</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1 align="center">Informasi Gempa</h1>
+        <table align="center" cellpadding="10px">
+            <thead>
+                <tr>
+                    <th>Lokasi Gempa</th>
+                    <th>Skala</th>
+                    <th>Dampak Gempa</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+
+<!--------------------SCRIPT-------------------->
+<script>
+    //Class Gempa
+    class Gempa {
+     constructor(lokasi, skala) {
+         this.lokasi = lokasi;
+         this.skala = skala;
+    }
+    //Fungsi Dampak
+    dampak(){
+        let akibat;
+        if(this.skala >= 0 && this.skala <= 2) akibat = "Dampak tidak terasa";
+        else if(this.skala > 2 && this.skala <= 4) akibat = "Bangunan retak";
+        else if(this.skala > 4 && this.skala <= 6) akibat = "Bangunan roboh";
+        else if(this.skala > 6) akibat = "Bangunan roboh dan berpotensi tsunami";
+        else akibat = "Tidak terjadi gempa";
+
+        document.write(`<tr>
+                        <td>${this.lokasi}</td>
+                        <td>${this.skala}</td>
+                        <td>${akibat}</td> 
+                        </tr>`);
+    }
+}
+//Intance Object dengan Beragam Skala Gempa
+let gempa1 = new Gempa('Acapulco Meksiko', 7.1, this.akibat);
+let gempa2 = new Gempa('Tahuna-KEP.Sangihe-SULUT, Indonesia', 5.0, this.akibat);
+let gempa3 = new Gempa('Pacitan, Indonesia', 3.2, this.akibat);
+let gempa4 = new Gempa('Luxian, China', 6.2, this.akibat);
+let gempa5 = new Gempa('Mino Tengah dan Barat, Prefektur Gifu, Jepang', 2.8, this.akibat);
+let gempa6 = new Gempa('Lepas Pantai Tenggara Pulau Etorofu, Jepang', 4.8, this.akibat);
+let gempa7 = new Gempa('Bagian Selatan Prefektur Nagano, Jepang', 2.1, this.akibat);
+let gempa8 = new Gempa('Di laut 65 km Tenggara Ondong, Indonesia', 5.6, this.akibat);
+let gempa9 = new Gempa('Di laut 28 km Barat Laut Pulau Panjang, Indonesia', 4.3, this.akibat);
+let gempa10 = new Gempa('Jeju, Korea', 7.7, this.akibat);
+//Cetak
+gempa1.dampak();
+gempa2.dampak();
+gempa3.dampak();
+gempa4.dampak();
+gempa5.dampak();
+gempa6.dampak();
+gempa7.dampak();
+gempa8.dampak();
+gempa9.dampak();
+gempa10.dampak();
+</script>
+</body>
+</html>
