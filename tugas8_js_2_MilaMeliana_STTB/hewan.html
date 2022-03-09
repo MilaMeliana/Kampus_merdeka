@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas-8 JQuery</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+            $(".kucing").click(function () {
+                $(this).css({
+                    background: "url(image/cat.png)"
+                });
+                $("<audio></audio>").attr({
+                    'src': "audio/cat.mp3",
+                    'volume': 0.4,
+                    'autoplay': "autoplay"
+                }).appendTo(".kucing");
+            });
+            $(".duck").click(function () {
+                $(this).css({
+                    background: "url(image/duck.png)"
+                });
+                $("<audio></audio>").attr({
+                    'src': "audio/duck.mp3",
+                    'volume': 0.4,
+                    'autoplay': "autoplay"
+                }).appendTo(".duck");
+            });
+            $(".ayam").click(function () {
+                $(this).css({
+                    background: "url(image/ayam.png)"
+                });
+                $("<audio></audio>").attr({
+                    'src': "audio/rooster.mp3",
+                    'volume': 0.4,
+                    'autoplay': "autoplay"
+                }).appendTo(".ayam");
+            });
+            $(".frog").click(function () {
+                $(this).css({
+                    background: "url(image/frog.png)"
+                });
+                $("<audio></audio>").attr({
+                    'src': "audio/frog.mp3",
+                    'volume': 0.4,
+                    'autoplay': "autoplay"
+                }).appendTo(".frog");
+            });
+            $(".owl").click(function () {
+                $(this).css({
+                    background: "url(image/owl.png)"
+                });
+                $("<audio></audio>").attr({
+                    'src': "audio/owl.mp3",
+                    'volume': 0.4,
+                    'autoplay': "autoplay"
+                }).appendTo(".owl");
+            });
+            $(".dove").click(function () {
+                $(this).css({
+                    background: "url(image/dove.png)"
+                });
+                $("<audio></audio>").attr({
+                    'src': "audio/dove.mp3",
+                    'volume': 0.4,
+                    'autoplay': "autoplay"
+                }).appendTo(".dove");
+            });
+            $(".cow").click(function () {
+                $(this).css({
+                    background: "url(image/cow.png)"
+                });
+                $("<audio></audio>").attr({
+                    'src': "audio/cow.mp3",
+                    'volume': 0.4,
+                    'autoplay': "autoplay"
+                }).appendTo(".cow");
+            });
+        });
+    </script>
+    <style type="text/css">
+       div {
+        background: rgb(221, 183, 133);
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 30px;
+        padding: 5px;
+        cursor: pointer;
+        border: 1px solid rgb(161, 21, 21);
+      }
+      .container{
+          background-color: rgb(158, 73, 73);
+            margin: 5px;
+            margin-left: 5%;
+            width: auto;
+            height: 220;
+      }
+      .judul{
+          font-family: Cambria;
+          text-align: center;
+          font-size: 30px;
+      }
+      .nama {
+            padding: 80px 5px;
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;}
+        body{
+            background-color: rgb(216, 160, 108);
+        }
+    </style>
+</head>
+<body>
+    <h2 class="judul">Klik Kotak Untuk Menampilkan Animasi Hewan dan Suaranya</h2>
+        <div class="container">
+        <div class="kucing">
+            <p class="nama">Kucing</p>
+        </div>
+        <div class="duck">
+            <p class="nama">Bebek</p>
+        </div>
+        <div class="ayam">
+            <p class="nama">Ayam</p>
+        </div>
+        <div class="owl">
+            <p class="nama">Burung Hantu</p>
+        </div>
+        <div class="frog">
+            <p class="nama">Katak</p>
+        </div>
+        <div class="dove">
+            <p class="nama">Merpati</p>
+        </div>
+        <div class="cow">
+            <p class="nama">Sapi</p>
+        </div>
+    </div>
+</body>
+</html>
